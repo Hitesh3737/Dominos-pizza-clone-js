@@ -3,7 +3,15 @@
 A responsive front-end web application that replicates the visual design and functionality of the Domino's Pizza online ordering platform. This project demonstrates proficiency in semantic HTML, modern CSS styling, and JavaScript logic for state management.
 
 ## 📸 Screenshots
-*(You can upload your Capture.PNG here later)*
+<img width="1920" height="913" alt="2025-12-09" src="https://github.com/user-attachments/assets/c2544328-d734-4ac9-9884-ecc6e5287874" />
+<img width="1920" height="919" alt="image" src="https://github.com/user-attachments/assets/d819cf76-2470-485e-b281-595432f372dc" />
+<img width="1693" height="924" alt="image" src="https://github.com/user-attachments/assets/84a601b2-121d-4ff4-bb36-8c2ccfa8b631" />
+<img width="1606" height="918" alt="image" src="https://github.com/user-attachments/assets/3365a173-6e9e-4856-a99a-5a662274293f" />
+<img width="1920" height="918" alt="image" src="https://github.com/user-attachments/assets/21ae6bef-3b83-4750-b61d-cdb75ad951a1" />
+<img width="1920" height="916" alt="image" src="https://github.com/user-attachments/assets/8a407026-6b0d-466d-9cb9-15c90d18aef9" />
+<img width="1920" height="917" alt="image" src="https://github.com/user-attachments/assets/4186d80b-b160-4832-8f6d-7125a397952a" />
+
+
 
 ## 🚀 Live Demo
 [Insert Link to your Netlify/Vercel/GitHub Pages here]
