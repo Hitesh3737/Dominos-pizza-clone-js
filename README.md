@@ -58,7 +58,7 @@ https://dominos-pizza-clone.netlify.app
 
 1.  Clone the repository:
     ```bash
-    git clone https://github.com/Hitesh3737/Dominos-pizza-clone-js
+    https://github.com/Hitesh3737/Dominos-pizza-clone-js
     ```
 2.  Navigate to the project directory.
 3.  Open `index.html` in your browser (or use Live Server in VS Code).
