@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Domino's</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Jolly+Lodger&family=Joti+One&family=Licorice&family=Luckiest+Guy&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- REQUIRED: Font Awesome for the cool header icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="inner-page">
+
+    <!-- CART SIDEBAR (Required for the Cart Button to work) -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h2>YOUR CART</h2>
+            <button class="close-cart" id="close-cart">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items"></div>
+        <div class="cart-footer">
+            <div class="coupon-section">
+                <input type="text" id="coupon-input" class="coupon-input" placeholder="Coupon Code">
+                <button class="apply-btn" onclick="applyCoupon()">APPLY</button>
+            </div>
+            <div class="cart-total"><span>Total:</span><span id="final-total">₹0</span></div>
+            <button class="checkout-btn" onclick="alert('Order Placed Successfully!')">CHECKOUT</button>
+        </div>
+    </div>
+
+    <!-- COOL HEADER START -->
+    <header>
+        <div class="header-content-wrapper">
+            <div class="header-top">
+                <!-- Animated Logo Container -->
+                <a href="index.html" class="logo-container">
+                    <div class="logo-bg"></div>
+                    <img src="images/DOMI.png" alt="Domino's Logo" class="logo">
+                    <div class="brand-name">
+                        <span class="brand-dominos">DOMINO'S</span>
+                        <span class="brand-pizza">PIZZA</span>
+                    </div>
+                </a>
+                
+                <!-- 3D Cart Button -->
+                <button class="cart-icon-btn" id="cart-btn">
+                    <div class="cart-inner">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-text">CART</span>
+                    </div>
+                    <span id="cart-count">0</span>
+                </button>
+
+                <!-- Mobile Menu Toggle -->
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+
+            <!-- Floating Navbar -->
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                    <li class="nav-item"><a href="menu.html" class="nav-link"><i class="fas fa-pizza-slice"></i> Menu</a></li>
+                    <li class="nav-item"><a href="offers.html" class="nav-link"><i class="fas fa-tags"></i> Offers</a></li>
+                    <li class="nav-item"><a href="delivery.html" class="nav-link"><i class="fas fa-motorcycle"></i> Delivery</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link active"><i class="fas fa-info-circle"></i> About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- COOL HEADER END -->
+
+    <div class="page-container">
+        <h1 class="page-title">OUR STORY</h1>
+        
+        <div class="about-content">
+            <h2 style="color: #006491; margin-bottom: 20px; font-family: 'Joti One', cursive;">Welcome to Domino's!</h2>
+            <p style="margin-bottom: 20px;">
+                Domino's Pizza is the world's largest pizza delivery company. We have a rich history of developing innovations that have made a significant impact on the delivery and carryout pizza industry.
+            </p>
+            <p style="margin-bottom: 20px;">
+                From the beginning, we have strived to be the best pizza delivery company in the world. We are obsessed with quality. We use 100% real cheese, fresh dough hand-tossed to perfection, and the freshest vegetables.
+            </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

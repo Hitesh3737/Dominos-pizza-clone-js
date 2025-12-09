@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Offers - Domino's</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Jolly+Lodger&family=Joti+One&family=Licorice&family=Luckiest+Guy&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="inner-page">
+    
+    <!-- CART SIDEBAR -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header"><h2>YOUR CART</h2><button class="close-cart" id="close-cart">&times;</button></div>
+        <div class="cart-items" id="cart-items"></div>
+        <div class="cart-footer">
+            <div class="coupon-section">
+                <input type="text" id="coupon-input" class="coupon-input" placeholder="Coupon Code">
+                <button class="apply-btn" onclick="applyCoupon()">APPLY</button>
+            </div>
+            <div class="cart-total"><span>Total:</span><span id="final-total">₹0</span></div>
+            <button class="checkout-btn" onclick="alert('Order Placed Successfully!')">CHECKOUT</button>
+        </div>
+    </div>
+
+    <header>
+    <div class="header-content-wrapper">
+        <div class="header-top">
+            <!-- Animated Logo Container -->
+            <a href="index.html" class="logo-container">
+                <div class="logo-bg"></div>
+                <img src="images/DOMI.png" alt="Domino's Logo" class="logo">
+                <div class="brand-name">
+                    <span class="brand-dominos">DOMINO'S</span>
+                    <span class="brand-pizza">PIZZA</span>
+                </div>
+            </a>
+            
+            <!-- 3D Cart Button -->
+            <button class="cart-icon-btn" id="cart-btn">
+                <div class="cart-inner">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-text">CART</span>
+                </div>
+                <span id="cart-count">0</span>
+            </button>
+
+            <!-- Mobile Menu Toggle -->
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+
+        <!-- Floating Navbar -->
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                <li class="nav-item"><a href="menu.html" class="nav-link"><i class="fas fa-pizza-slice"></i> Menu</a></li>
+                <li class="nav-item"><a href="offers.html" class="nav-link active"><i class="fas fa-tags"></i> Offers</a></li>
+                <li class="nav-item"><a href="delivery.html" class="nav-link"><i class="fas fa-motorcycle"></i> Delivery</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link"><i class="fas fa-info-circle"></i> About Us</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <div class="page-container">
+        <h1 class="page-title">CRAZY DEALS & OFFERS</h1>
+        
+        <div class="offers-grid">
+            <div class="offer-card">
+                <img src="images/50_off.jpg" style="width:100px; border-radius:50%; margin-bottom:10px;">
+                <h2>50% OFF</h2>
+                <p>Get 50% off on your order. Max discount ₹100.</p>
+                <div class="offer-code" onclick="navigator.clipboard.writeText('DOM50'); alert('Code Copied! Enter DOM50 in cart.')" title="Click to Copy">CODE: DOM50</div>
+            </div>
+
+            <div class="offer-card">
+                <img src="images/Party_Combo.jpg" style="width:100px; border-radius:50%; margin-bottom:10px;">
+                <h2>Party Combo</h2>
+                <p>Buy 3 Pizzas (Veg/Big/Mania) and get Garlic Bread Free!</p>
+                <div class="offer-code" onclick="navigator.clipboard.writeText('PARTY3'); alert('Code Copied! Enter PARTY3 in cart.')" title="Click to Copy">CODE: PARTY3</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

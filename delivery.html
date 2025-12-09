@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delivery - Domino's</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Jolly+Lodger&family=Joti+One&family=Licorice&family=Luckiest+Guy&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="inner-page">
+
+    <header>
+    <div class="header-content-wrapper">
+        <div class="header-top">
+            <!-- Animated Logo Container -->
+            <a href="index.html" class="logo-container">
+                <div class="logo-bg"></div>
+                <img src="images/DOMI.png" alt="Domino's Logo" class="logo">
+                <div class="brand-name">
+                    <span class="brand-dominos">DOMINO'S</span>
+                    <span class="brand-pizza">PIZZA</span>
+                </div>
+            </a>
+            
+            <!-- 3D Cart Button -->
+            <button class="cart-icon-btn" id="cart-btn">
+                <div class="cart-inner">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-text">CART</span>
+                </div>
+                <span id="cart-count">0</span>
+            </button>
+
+            <!-- Mobile Menu Toggle -->
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+
+        <!-- Floating Navbar -->
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                <li class="nav-item"><a href="menu.html" class="nav-link"><i class="fas fa-pizza-slice"></i> Menu</a></li>
+                <li class="nav-item"><a href="offers.html" class="nav-link"><i class="fas fa-tags"></i> Offers</a></li>
+                <li class="nav-item"><a href="delivery.html" class="nav-link active"><i class="fas fa-motorcycle"></i> Delivery</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link"><i class="fas fa-info-circle"></i> About Us</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <div class="page-container">
+        <h1 class="page-title">HOW WOULD YOU LIKE IT?</h1>
+        
+        <div class="delivery-features">
+            <!-- 30 Mins -> Menu -->
+            <div class="feature-box" onclick="window.location.href='menu.html'" style="cursor:pointer;" title="Order Now">
+                <i class="fas fa-motorcycle"></i>
+                <h2>30 Minutes Delivery</h2>
+                <p>We guarantee delivery to your doorstep within 30 minutes! (Click to Order)</p>
+            </div>
+
+            <!-- Zero Contact -> Menu -->
+            <div class="feature-box" onclick="window.location.href='menu.html'" style="cursor:pointer;" title="Order Now">
+                <i class="fas fa-box-open"></i>
+                <h2>Zero Contact</h2>
+                <p>Safe delivery at your door step. (Click to Order)</p>
+            </div>
+
+            <!-- Drive N Pick -> Google Maps Location -->
+            <div class="feature-box" onclick="findLocation()" style="cursor:pointer;" title="Find Nearest Store">
+                <i class="fas fa-store"></i>
+                <h2>Drive-N-Pick</h2>
+                <p>Order online and pick it up. We track your location to find the nearest store.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
